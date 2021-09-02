@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Host It - A Web Hosting Service</title>
+    <!-- Font Linkings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Linkings -->
+    <!-- CSS Content Here -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+      }
+      body::-webkit-scrollbar {
+        width: 10px; /* width of the entire scrollbar */
+      }
+      body::-webkit-scrollbar-track {
+        background: rgb(70, 67, 67); /* color of the tracking area */
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: white; /* color of the scroll thumb */
+        border-radius: 15px; /* roundness of the scroll thumb */
+        border: 3px solid white; /* creates padding around scroll thumb */
+      }
+      a,
+      a:visited,
+      a:hover {
+        text-decoration: none;
+      }
+      /*Home Section*/
+      #home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        background-color: #fcd1d1;
+        color: #fbfffe;
+      }
+      .container {
+        padding: 2em 3em;
+        background-color: #142850;
+        min-width: 50vw;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h1,
+      h2,
+      footer {
+        font-family: "Oxygen", sans-serif;
+      }
+      h1 {
+        font-size: 5em;
+        letter-spacing: 8px;
+      }
+      h2 {
+        color: #fbfffe77;
+        letter-spacing: 8px;
+      }
+      .img {
+        /* min-width: 50vw;
+        min-height: 60vh;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        height: 70%;
+        width: 70%;
+      }
+      .btns {
+        display: flex;
+        margin-top: 1.5em;
+      }
+      .cta {
+        background-color: rgb(222, 228, 149);
+        color: #000;
+        padding: 1em 2em;
+        margin-right: 1em;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        font-family: "Oxygen", sans-serif;
+        font-weight: bold;
+      }
+      .sec {
+        background-color: #142850;
+        border: 3px solid rgb(222, 228, 149);
+        color: #fbfffe;
+      }
+      /*Home Section Ends*/
+      /*Details Section Starts*/
+      #details {
+        min-height: 100vh;
+        background-color: #0c7b93;
+      }
+      /*Details Section Ends*/
+      /*Host Now Section Starts*/
+      #upload {
+        min-height: 95vh;
+        background-color: #fcd1d1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 100px;
+        font-family: "Oxygen", sans-serif;
+      }
+      /*.register::before {
+        content: "Register.";
+        font-size: 5em;
+        font-weight: bolder;
+        color: #14285054;
+        letter-spacing: 8px;
+      }*/
+      input {
+        border: none;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 0 5px;
+        margin-bottom: 5px;
+        font-family: "Oxygen", sans-serif;
+      }
+      button {
+        background-color: #142850;
+        color: #fbfffe;
+        border: none;
+        padding: 1em;
+        border-radius: 7px;
+        font-family: "Oxygen", sans-serif;
+        cursor: pointer;
+      }
+      .click {
+        cursor: pointer;
+        background-color: #142850;
+        color: #fbfffe;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Oxygen", sans-serif;
+      }
+      /*Host Now Section Ends*/
+      /*Footer Starts*/
+      footer {
+        min-height: 5vh;
+        background-color: #142850;
+        display: flex;
+        color: #fbfffe;
+        justify-content: center;
+        align-items: center;
+      }
+      /*Footer Ends*/
+    </style>
+    <!-- CSS Content Ends -->
+  </head>
+  <body>
+    <!-- Main HTML Content Here -->
+    <main id="home">
+      <div class="container">
+        <h1 class="title">Host It.</h1>
+        <h2 class="content">A simple web hosting service</h2>
+        <div class="btns">
+          <a href="#upload" class="cta">Host Now</a>
+          <a href="#details" class="cta sec">Know More</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="/home.svg" alt="Loading..." />
+      </div>
+    </main>
+    <section id="details"></section>
+    <section id="upload">
+      <section class="register">
+        <!-- <form action="auth" method="POST"> -->
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <!-- <input type="submit" /> -->
+        <button onclick="auth()">Register</button>
+        <!-- </form> -->
+      </section>
+      <section class="addfile">
+        <input type="file" id="fileUpload" />
+        <div class="click" onclick="s3upload()">Upload</div>
+        <progress max="”100”" value="”0”"></progress>
+      </section>
+    </section>
+    <footer>Host It - A Web Hosting Service</footer>
+    <!-- Main HTML Content Ends -->
+
+    <!-- Script Content Here -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript">
+      //Bucket Configurations
+      var bucketName = "hostit321";
+      var bucketRegion = "us-east-2";
+      var IdentityPoolId = "us-east-2:b0314f69-0571-4a8a-95b1-d5b869084bfd";
+
+      AWS.config.update({
+        region: bucketRegion,
+        credentials: new AWS.CognitoIdentityCredentials({
+          IdentityPoolId: IdentityPoolId,
+        }),
+      });
+
+      var s3 = new AWS.S3({
+        apiVersion: "2006-03-01",
+        params: { Bucket: bucketName },
+      });
+      const upload = () => {
+        console.log("Hello");
+      };
+      const auth = () => {
+        console.log("Register");
+      };
+      function s3upload() {
+        var files = document.getElementById("fileUpload").files;
+        if (files) {
+          var file = files[0];
+          var fileName = file.name; //change it to index.html
+          var filePath = "hostit321/" + "user1/" + fileName;
+          var fileUrl =
+            "https://" + bucketRegion + ".amazonaws.com/hostit321/" + filePath;
+          s3.upload(
+            {
+              Key: filePath,
+              Body: file,
+              ACL: "public-read",
+            },
+            function (err, data) {
+              if (err) {
+                reject("error");
+              }
+              alert("Successfully Uploaded!");
+            }
+          ).on("httpUploadProgress", function (progress) {
+            var uploaded = parseInt((progress.loaded * 100) / progress.total);
+            $("progress").attr("value", uploaded);
+          });
+        }
+      }
+    </script>
+    <!-- Script Content Ends -->
+  </body>
+</html>

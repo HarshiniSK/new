@@ -1,0 +1,20 @@
+{
+  "name": "cloud_computing",
+  "version": "0.0.1",
+  "description": "final project of cloud computing coure",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.980.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.3",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

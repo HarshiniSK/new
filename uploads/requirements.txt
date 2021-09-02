@@ -1,0 +1,52 @@
+atomicwrites==1.4.0
+attrs @ file:///tmp/build/80754af9/attrs_1600298409949/work
+Automat @ file:///tmp/build/80754af9/automat_1600298431173/work
+bcrypt @ file:///C:/ci/bcrypt_1597918112552/work
+brotlipy==0.7.0
+certifi==2020.6.20
+cffi @ file:///C:/ci/cffi_1600699250966/work
+chardet==3.0.4
+colorama==0.4.3
+constantly==15.1.0
+cryptography @ file:///C:/ci/cryptography_1601046913206/work
+cssselect==1.1.0
+hyperlink @ file:///tmp/build/80754af9/hyperlink_1600360282274/work
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+importlib-metadata @ file:///C:/ci/importlib-metadata_1593446525189/work
+incremental==17.5.0
+iniconfig @ file:///tmp/build/80754af9/iniconfig_1596827328212/work
+itemadapter @ file:///tmp/build/80754af9/itemadapter_1601311215494/work
+lxml @ file:///C:/ci/lxml_1594826938446/work
+more-itertools @ file:///tmp/build/80754af9/more-itertools_1598884071673/work
+olefile==0.46
+packaging==20.4
+parsel==1.5.2
+Pillow @ file:///C:/ci/pillow_1594298234712/work
+pluggy==0.13.1
+Protego @ file:///tmp/build/80754af9/protego_1598657180827/work
+py @ file:///tmp/build/80754af9/py_1593446248552/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+PyDispatcher==2.0.5
+PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1594390921726/work
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
+PySocks @ file:///C:/ci/pysocks_1594394709107/work
+pytest==0.0.0
+pytest-runner==5.2
+pywin32==227
+queuelib==1.5.0
+requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+Scrapy @ file:///C:/ci/scrapy_1600546895920/work
+selenium @ file:///C:/ci/selenium_1594408106746/work
+service-identity==18.1.0
+six==1.15.0
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+Twisted==20.3.0
+urllib3 @ file:///tmp/build/80754af9/urllib3_1597086586889/work
+w3lib==1.21.0
+win-inet-pton==1.1.0
+wincertstore==0.2
+zipp @ file:///tmp/build/80754af9/zipp_1602002379921/work
+zope.interface @ file:///C:/ci/zope.interface_1602002496598/work
